@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rutina para empezar</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef0ec;--card:#fff;--ink:#1c2a33;--mut:#55656f;--fig:#1f5fa8;--bar:#8a969e;--ground:#c4cbc0;--hl:#3f7d4e;--fig2:#86aedb;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#161d22;--card:#1f2830;--ink:#eef0ec;--mut:#a3b0b8;--fig:#6aa8ee;--bar:#8a969e;--ground:#3a464e;--hl:#79c58a;--fig2:#3f6894}}
+:root[data-theme="dark"]{--bg:#161d22;--card:#1f2830;--ink:#eef0ec;--mut:#a3b0b8;--fig:#6aa8ee;--bar:#8a969e;--ground:#3a464e;--hl:#79c58a;--fig2:#3f6894}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.5 Barlow,system-ui,sans-serif}
+main{max-width:520px;margin:0 auto;padding:20px 16px 40px}
+h1,h2{font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-weight:700;line-height:1.05;margin:0}
+h1{font-size:44px}
+.sub{color:var(--mut);margin:8px 0 22px}
+.plan{display:flex;gap:8px;margin-bottom:22px}
+.plan div{flex:1;background:var(--card);border-radius:10px;padding:10px 8px;text-align:center;font-weight:500}
+.plan b{display:block;font:700 28px "Barlow Condensed",sans-serif;color:var(--hl)}
+article{background:var(--card);border-radius:14px;padding:16px;margin-bottom:18px}
+h2{font-size:30px}
+.reps{color:var(--hl);font-weight:500;margin:2px 0 8px}
+svg{width:100%;height:auto;display:block;background:var(--bg);border-radius:10px}
+svg *{fill:none;stroke:var(--fig);stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
+svg .head{fill:var(--fig);stroke:none}
+svg .bar{stroke:var(--bar);stroke-width:6}
+svg .barc{fill:var(--bar);stroke:var(--bar);stroke-width:2}
+svg .sh{fill:var(--ground);stroke:none}
+svg .t{stroke:var(--fig2)}
+svg .gr{stroke:var(--ground);stroke-width:4}
+.cap{display:flex;justify-content:space-between;color:var(--mut);font-size:14px;margin:6px 2px 10px}
+ol,ul{margin:0;padding-left:20px}
+li{margin:3px 0}
+.tip{margin-top:10px;color:var(--mut);font-size:15px}
+#pp{display:block;margin:0 0 18px auto;background:var(--card);color:var(--ink);border:1px solid var(--ground);border-radius:999px;padding:6px 14px;font:500 15px Barlow,sans-serif;cursor:pointer}
+.note{text-align:center;color:var(--mut);font-size:15px}
+</style>
+</head>
+<body>
+<main>
+<h1>Rutina para empezar</h1>
+<p class="sub">Tres ejercicios, sin equipo raro. Mirá cómo se hace cada uno.</p>
+<button id="pp" type="button">Pausar movimiento</button>
+<div class="plan"><div><b>3</b>rondas</div><div><b>1 min</b>descanso</div><div><b>3</b>veces por semana</div></div>
+
+<article>
+<h2>1. Australianas</h2>
+<p class="reps">8 a 10 repeticiones</p>
+<svg viewBox="0 0 260 170" role="img" aria-label="Australiana de perfil: el cuerpo recto sube hasta que la barra toca el pecho">
+<line class="gr" x1="10" y1="152" x2="250" y2="152"/><line class="gr" x1="78" y1="48" x2="78" y2="152"/>
+<path d="M55 68L95 108L135 148" data-d="M55 68L95 108L135 148;M72 40L103 94L135 148"/>
+<path d="M78 48L66 58L55 68" data-d="M78 48L66 58L55 68;M78 48L78 68L72 40"/>
+<circle class="head" cx="44" cy="57" r="9" data-cx="44;64" data-cy="57;26"/>
+<circle class="barc" cx="78" cy="48" r="5"/>
+</svg>
+<div class="cap"><span>Abajo: brazos estirados</span><span>Arriba: pecho a la barra</span></div>
+<ul><li>Agarrá una barra baja (a la altura de la cintura o el pecho) y ponete abajo, con los talones apoyados.</li><li>Mantené el cuerpo recto como una tabla.</li><li>Tirá hasta que la barra toque la parte baja del pecho, y bajá despacio.</li></ul>
+<p class="tip">Para hacerlo más fácil, doblá las rodillas o parate más cerca de la barra.</p>
+</article>
+
+<article>
+<h2>2. Flexiones</h2>
+<p class="reps">8 a 10 repeticiones</p>
+<svg viewBox="0 0 260 170" role="img" aria-label="Flexión: el cuerpo recto baja el pecho al piso y vuelve a subir">
+<line class="gr" x1="10" y1="144" x2="250" y2="144"/>
+<path d="M62 140L63 114L64 88" data-d="M62 140L63 114L64 88;M62 140L92 128L64 122"/>
+<path d="M64 88L135 104L210 138" data-d="M64 88L135 104L210 138;M64 122L135 128L210 138"/>
+<circle class="head" cx="46" cy="82" r="9" data-cx="46;46" data-cy="82;116"/>
+</svg>
+<div class="cap"><span>Arriba: brazos estirados</span><span>Abajo: pecho casi al piso</span></div>
+<ul><li>Manos al ancho de los hombros, cuerpo recto de la cabeza a los pies.</li><li>Bajá el pecho hasta casi tocar el piso, con los codos algo pegados al cuerpo.</li><li>Empujá hasta estirar los brazos.</li></ul>
+<p class="tip">Si cuesta, hacelas con las rodillas apoyadas en el piso.</p>
+</article>
+
+<article>
+<h2>3. Sentadillas</h2>
+<p class="reps">15 repeticiones</p>
+<svg viewBox="0 0 260 170" role="img" aria-label="Sentadilla: se baja la cadera hacia atrás como para sentarse y se vuelve a subir">
+<line class="gr" x1="10" y1="152" x2="250" y2="152"/>
+<path d="M120 148L122 104L120 66" data-d="M120 148L122 104L120 66;M120 148L150 118L98 114"/>
+<path d="M120 66L120 36" data-d="M120 66L120 36;M98 114L112 80"/>
+<path d="M120 36L150 40" data-d="M120 36L150 40;M112 80L150 76"/>
+<circle class="head" cx="120" cy="18" r="9" data-cx="120;116" data-cy="18;62"/>
+</svg>
+<div class="cap"><span>Arriba: parado derecho</span><span>Abajo: como sentándote</span></div>
+<ul><li>Pies al ancho de los hombros.</li><li>Llevá la cadera hacia atrás y abajo, con la espalda derecha.</li><li>Los talones quedan pegados al piso y las rodillas siguen la línea de los pies.</li></ul>
+<p class="tip">Bajá hasta donde puedas con control, sin dolor en las rodillas.</p>
+</article>
+
+<p class="note">Si algo te duele, pará. Andá de a poco y sumá repeticiones con las semanas.</p>
+</main>
+<script>
+(function(){
+var NS="http://www.w3.org/2000/svg",svgs=document.querySelectorAll("svg");
+document.querySelectorAll("[data-d],[data-cx],[data-cy]").forEach(function(el){
+ ["d","cx","cy"].forEach(function(a){
+  var v=el.getAttribute("data-"+a); if(!v)return;
+  var p=v.split(";"),an=document.createElementNS(NS,"animate");
+  an.setAttribute("attributeName",a);
+  an.setAttribute("values",[p[0],p[0],p[1],p[1],p[0]].join(";"));
+  an.setAttribute("keyTimes","0;.2;.5;.7;1");
+  an.setAttribute("calcMode","spline");
+  an.setAttribute("keySplines","0 0 1 1;.45 0 .55 1;0 0 1 1;.45 0 .55 1");
+  an.setAttribute("dur","3.6s");an.setAttribute("repeatCount","indefinite");
+  el.appendChild(an);
+ });
+});
+var b=document.getElementById("pp"),paused=false;
+b.addEventListener("click",function(){
+ paused=!paused;
+ svgs.forEach(function(s){paused?s.pauseAnimations():s.unpauseAnimations()});
+ b.textContent=paused?"Reanudar movimiento":"Pausar movimiento";
+});
+})();
+</script>
+</body>
+</html>
