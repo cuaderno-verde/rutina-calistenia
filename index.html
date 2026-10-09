@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Rutina para empezar</title>
+<title>Rutina de calistenia</title>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#eef0ec;--card:#fff;--ink:#1c2a33;--mut:#55656f;--fig:#1f5fa8;--bar:#8a969e;--ground:#c4cbc0;--hl:#3f7d4e;--fig2:#86aedb;
@@ -35,20 +35,28 @@ ol,ul{margin:0;padding-left:20px}
 li{margin:3px 0}
 .tip{margin-top:10px;color:var(--mut);font-size:15px}
 #pp{display:block;margin:0 0 18px auto;background:var(--card);color:var(--ink);border:1px solid var(--ground);border-radius:999px;padding:6px 14px;font:500 15px Barlow,sans-serif;cursor:pointer}
+.tabs{display:flex;gap:8px;margin:0 0 18px}
+.tabs button{flex:1;background:var(--card);color:var(--ink);border:1px solid var(--ground);border-radius:10px;padding:10px;font:700 24px "Barlow Condensed","Arial Narrow",sans-serif;cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--fig);color:var(--bg);border-color:var(--fig)}
+.blk{font:700 26px "Barlow Condensed","Arial Narrow",sans-serif;color:var(--hl);margin:24px 0 10px}
+.pro{background:var(--card);border-left:5px solid var(--hl);border-radius:10px;padding:12px 14px;margin:0 0 18px;font-size:16px;color:var(--mut)}
+[hidden]{display:none!important}
 .note{text-align:center;color:var(--mut);font-size:15px}
 </style>
 </head>
 <body>
 <main>
-<h1>Rutina para empezar</h1>
-<p class="sub">Tres ejercicios, sin equipo raro. Mirá cómo se hace cada uno.</p>
+<h1>Rutina de calistenia</h1>
+<p class="sub">Mirá cómo se hace cada ejercicio. Empezá por el nivel 1.</p>
+<div class="tabs" role="tablist"><button type="button" role="tab" aria-selected="true" data-t="n1">Nivel 1</button><button type="button" role="tab" aria-selected="false" data-t="n2">Nivel 2</button></div>
 <button id="pp" type="button">Pausar movimiento</button>
+<section id="n1">
 <div class="plan"><div><b>3</b>rondas</div><div><b>1 min</b>descanso</div><div><b>3</b>veces por semana</div></div>
 
 <article>
 <h2>1. Australianas</h2>
 <p class="reps">8 a 10 repeticiones</p>
-<svg viewBox="0 0 260 170" role="img" aria-label="Australiana de perfil: el cuerpo recto sube hasta que la barra toca el pecho">
+<svg data-fig="aus" viewBox="0 0 260 170" role="img" aria-label="Australiana de perfil: el cuerpo recto sube hasta que la barra toca el pecho">
 <line class="gr" x1="10" y1="152" x2="250" y2="152"/><line class="gr" x1="78" y1="48" x2="78" y2="152"/>
 <path d="M55 68L95 108L135 148" data-d="M55 68L95 108L135 148;M72 40L103 94L135 148"/>
 <path d="M78 48L66 58L55 68" data-d="M78 48L66 58L55 68;M78 48L78 68L72 40"/>
@@ -63,7 +71,7 @@ li{margin:3px 0}
 <article>
 <h2>2. Flexiones</h2>
 <p class="reps">8 a 10 repeticiones</p>
-<svg viewBox="0 0 260 170" role="img" aria-label="Flexión: el cuerpo recto baja el pecho al piso y vuelve a subir">
+<svg data-fig="fle" viewBox="0 0 260 170" role="img" aria-label="Flexión: el cuerpo recto baja el pecho al piso y vuelve a subir">
 <line class="gr" x1="10" y1="144" x2="250" y2="144"/>
 <path d="M62 140L63 114L64 88" data-d="M62 140L63 114L64 88;M62 140L92 128L64 122"/>
 <path d="M64 88L135 104L210 138" data-d="M64 88L135 104L210 138;M64 122L135 128L210 138"/>
@@ -89,10 +97,96 @@ li{margin:3px 0}
 <p class="tip">Bajá hasta donde puedas con control, sin dolor en las rodillas.</p>
 </article>
 
+</section>
+
+<section id="n2" hidden>
+<p class="sub" style="margin-top:0">Cuando el nivel 1 te quede fácil, pasá a este.</p>
+<h2 class="blk">Bloque 1</h2>
+
+<article>
+<h2>Dominadas</h2>
+<p class="reps">3 series de 2 repeticiones (2/2/2)</p>
+<svg viewBox="0 0 260 170" role="img" aria-label="Dominada de costado: colgado de la barra con los brazos estirados, sube hasta pasar el mentón por la barra">
+<line class="gr" x1="10" y1="162" x2="250" y2="162"/>
+<g transform="translate(24,0)">
+<path d="M105 78L109 118L105 138L93 152" data-d="M105 78L109 118L105 138L93 152;M106 38L110 78L106 98L94 112"/>
+<path d="M110 30L107 54L105 78" data-d="M110 30L107 54L105 78;M110 30L121 54L106 38"/>
+<circle class="head" cx="95" cy="62" r="10" data-cx="95;99" data-cy="62;17"/>
+<circle class="barc" cx="110" cy="30" r="6"/>
+</g></svg>
+<div class="cap"><span>Abajo: brazos estirados</span><span>Arriba: mentón sobre la barra</span></div>
+<ul><li>Agarrá la barra con las manos un poco más separadas que los hombros.</li><li>Colgate con los brazos estirados y el cuerpo firme.</li><li>Subí hasta pasar el mentón por la barra y bajá con control.</li></ul>
+</article>
+
+<article>
+<h2>Fondos en barra fija</h2>
+<p class="reps">3 series de 4 repeticiones (4/4/4)</p>
+<svg viewBox="0 0 260 170" role="img" aria-label="Fondos de costado: con los brazos estirados el cuerpo baja doblando los codos y vuelve a subir">
+<g transform="translate(24,0)">
+<line class="gr" x1="110" y1="96" x2="110" y2="166"/>
+<path d="M112 56L103 100L97 122L87 142" data-d="M112 56L103 100L97 122L87 142;M112 76L103 120L97 142L87 162"/>
+<path d="M110 96L111 76L112 56" data-d="M110 96L111 76L112 56;M110 96L95 93L112 76"/>
+<circle class="head" cx="117" cy="40" r="10" data-cx="117;117" data-cy="40;60"/>
+<circle class="barc" cx="110" cy="96" r="6"/>
+</g></svg>
+<div class="cap"><span>Arriba: brazos estirados</span><span>Abajo: codos doblados</span></div>
+<ul><li>Apoyá las manos en la barra con los brazos estirados y el cuerpo arriba.</li><li>Bajá doblando los codos, con el pecho firme.</li><li>Empujá hasta estirar los brazos de nuevo.</li></ul>
+</article>
+
+<p class="pro">Subí una repetición cada dos semanas. Si no podés, mantené las que tenés y volvé a probar dos semanas después.</p>
+
+<h2 class="blk">Bloque 2</h2>
+
+<article>
+<h2>Flexiones</h2>
+<p class="reps">5 series de 5 repeticiones (5/5/5/5/5)</p>
+<div class="clone" data-from="fle"></div>
+<div class="cap"><span>Arriba: brazos estirados</span><span>Abajo: pecho casi al piso</span></div>
+<ul><li>Manos al ancho de los hombros y cuerpo recto de la cabeza a los pies.</li><li>Bajá el pecho casi hasta el piso y empujá hasta estirar los brazos.</li></ul>
+</article>
+
+<article>
+<h2>Australianas</h2>
+<p class="reps">5 series de 5 repeticiones (5/5/5/5/5)</p>
+<div class="clone" data-from="aus"></div>
+<div class="cap"><span>Abajo: brazos estirados</span><span>Arriba: pecho a la barra</span></div>
+<ul><li>Cuerpo recto como una tabla, con los talones apoyados.</li><li>Tirá hasta que la barra toque la parte baja del pecho y bajá despacio.</li></ul>
+</article>
+
+<article>
+<h2>Sentadillas a una pierna asistidas</h2>
+<p class="reps">3 series de 3 repeticiones (3x3). Sumá una repetición cada mes.</p>
+<svg viewBox="0 0 260 170" role="img" aria-label="Sentadilla a una pierna asistida: agarrado de un poste, baja sobre una pierna con la otra estirada adelante y vuelve a subir">
+<line class="gr" x1="10" y1="152" x2="250" y2="152"/>
+<g transform="translate(10,0)">
+<line class="gr" x1="136" y1="40" x2="136" y2="152"/>
+<path d="M92 148L92 108L92 68" data-d="M92 148L92 108L92 68;M92 148L122 120L84 108"/>
+<path style="stroke:var(--mut)" d="M92 68L124 70L156 72" data-d="M92 68L124 70L156 72;M84 108L117 106L150 104"/>
+<path d="M92 68L92 36" data-d="M92 68L92 36;M84 108L98 72"/>
+<path d="M92 36L114 44L136 50" data-d="M92 36L114 44L136 50;M98 72L118 68L136 62"/>
+<circle class="head" cx="92" cy="20" r="9" data-cx="92;104" data-cy="20;57"/>
+</g></svg>
+<div class="cap"><span>Arriba: parado en una pierna</span><span>Abajo: bajando asistido</span></div>
+<ul><li>Agarrate de un poste o una barra con una mano.</li><li>Pará sobre una pierna y estirá la otra hacia adelante.</li><li>Bajá con control y subí ayudándote con la mano solo lo justo.</li><li>Cada mes sumá una repetición.</li></ul>
+</article>
+
+<p class="pro">Flexiones y australianas quedan como están. Cuando se vuelvan muy fáciles, subí ese 5 a 10. En las sentadillas a una pierna, sumá una repetición cada mes.</p>
+</section>
 <p class="note">Si algo te duele, pará. Andá de a poco y sumá repeticiones con las semanas.</p>
 </main>
 <script>
 (function(){
+document.querySelectorAll(".clone").forEach(function(c){
+ var f=document.querySelector('svg[data-fig="'+c.getAttribute("data-from")+'"]');
+ if(f)c.appendChild(f.cloneNode(true));
+});
+document.querySelectorAll(".tabs button").forEach(function(t){
+ t.addEventListener("click",function(){
+  document.querySelectorAll(".tabs button").forEach(function(o){o.setAttribute("aria-selected",o===t?"true":"false")});
+  ["n1","n2"].forEach(function(id){document.getElementById(id).hidden=(id!==t.getAttribute("data-t"))});
+  window.scrollTo(0,0);
+ });
+});
 var NS="http://www.w3.org/2000/svg",svgs=document.querySelectorAll("svg");
 document.querySelectorAll("[data-d],[data-cx],[data-cy]").forEach(function(el){
  ["d","cx","cy"].forEach(function(a){
